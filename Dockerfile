@@ -13,7 +13,7 @@
 # ENTRYPOINT ["nginx", "-g", "daemon off;"]
 
 
-FROM node:17.1-alpine as build-stage
+FROM node:latest as build-stage
 WORKDIR /app
 COPY package*.json ./
 RUN npm install
